@@ -59,12 +59,12 @@
       storage_container: '{{ vmname }}'
       storage_blob: '{{ vmname }}.vhd'
       network_interfaces: '{{ vmname }}'
-      vm_size: Standard_A0
+      vm_size: Standard_DS1_v2
       admin_username: azureuser
       ssh_password_enabled: false
       ssh_public_keys: 
         - path: /home/azureuser/.ssh/authorized_keys
-          key_data: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDn4i0NkH4uFL7B87MJBW0TyQcsk99vQNlHyZLJyRielhU2kxy73K4ecOEcYQPu0B58KbQfHM2EooaHbZIDAaZK8K62yaYz5eV7YBMr5TdN9Tw5u1GGT5LrWsOYoHcQtcSnTRbBSWZDFIx5eJWebBxdDh61LbEftyOLg16xsLRIqp6SeAtJANTWNSMCEH96qn4+12eoW8bYQ7flVyR7uyE+7NDKmMaHk0zWUQe0wluHyUnfj15g1tfRvwXyUEMLMagyFrhRh0n/wNBnV8XrX74OjqCseJfh3YnuLxhy4hAmw0di699Q3jTB3xJ8b7yg2NvoAF+lzSkQtiArTjEBVKuv lab-user@ansibleMaster'
+          key_data: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCpDA7uabIH7SRRrvjqwg6n/eCeBa6ZCmC7b3qIlxeD8ybL7yo2zrbLJn7zaIZVRN7Uikalgbac4lbyuHxYCyuarIVEk+ExdI4ttWqpXphHq4RYqTYNBs1dfO5WQJuQM7A3aVkW5BSsZhnfQwxNdCWQEHx2iTzrAHXGsmL7cc2EsnUCbEP6aM2wPxdAM5o4HiyEoLl+odpy8/r7z1tCRH7wsue2zZn2YdYeHo90822Uxu4rL70//7F0z/y0n+01un9w4bG8d4jmB3qjiZwssUgAPUiSiUR2pj2qw+sXonikX3Xo+I9hye17bufTIxlGAlNpfBSNODaP0IhNgaod2/oD azureuser@az400m1403vm1'
       image:
         offer: CentOS
         publisher: OpenLogic
